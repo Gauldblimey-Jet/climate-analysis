@@ -1,0 +1,300 @@
++# to add call for processing rainfall
+\ No newline at end of file
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ rm climate_analysis
+rm: cannot remove 'climate_analysis': No such file or directory
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ rm climate_analysis.py
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git_checkout HEAD climate_analysis.py
+bash: git_checkout: command not found
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git checkout HEAD climate_analysis.py
+Updated 1 path from f1de4bb
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git remote add origin https://github.com/Gauldblimey-Jet/climate-analysis.git
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git remote --verbose
+origin  https://github.com/Gauldblimey-Jet/climate-analysis.git (fetch)
+origin  https://github.com/Gauldblimey-Jet/climate-analysis.git (push)
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.16 KiB | 1.16 MiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Gauldblimey-Jet/climate-analysis.git
+ * [new branch]      master -> master
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ fit pull origin
+bash: fit: command not found
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ fit pull origin master
+bash: fit: command not found
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git pull origin mater
+fatal: couldn't find remote ref mater
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git pull origin master
+From https://github.com/Gauldblimey-Jet/climate-analysis
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ ls
+climate_analysis.py  temp_conversion.py
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git push origin master
+To https://github.com/Gauldblimey-Jet/climate-analysis.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/Gauldblimey-Jet/climate-a
+nalysis.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git pull origin master
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/Gauldblimey-Jet/climate-analysis
+ * branch            master     -> FETCH_HEAD
+   4afd127..c099888  master     -> origin/master
+Updating 4afd127..c099888
+Fast-forward
+ rainfall_conversion.py | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+ create mode 100644 rainfall_conversion.py
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git push origin master
+Everything up-to-date
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git pull origin master
+From https://github.com/Gauldblimey-Jet/climate-analysis
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git push origin master
+Everything up-to-date
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ pwd
+/c/Users/Jethro/2019-03-13-southampton-swc/novice/git/code
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git add README.md
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ commit
+bash: commit: command not found
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git commit ~m "README.md"
+error: pathspec '~m' did not match any file(s) known to git
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git commit ~m"README.md"
+error: pathspec '~mREADME.md' did not match any file(s) known to git
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git commit -m "README.md"
+[master 2104431] README.md
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 301 bytes | 301.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Gauldblimey-Jet/climate-analysis.git
+   c099888..2104431  master -> master
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git add rainfall_conversion.py
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git commit -m "rainfall_conversion.py"
+[master bdba289] rainfall_conversion.py
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 360 bytes | 360.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Gauldblimey-Jet/climate-analysis.git
+   2104431..bdba289  master -> master
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git pull origin master
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 4), reused 6 (delta 4), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From https://github.com/Gauldblimey-Jet/climate-analysis
+ * branch            master     -> FETCH_HEAD
+   bdba289..1d6f67b  master     -> origin/master
+Updating bdba289..1d6f67b
+Fast-forward
+ rainfall_conversion.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ mkdir results
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ touch a.dat b.dat c.dat results/a.out results/b.out
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+        a.dat
+        b.dat
+        c.dat
+        results/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git add .gitignore
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git commit -m "Added the ignore file"
+[master e57a251] Added the ignore file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .gitignore
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        a.dat
+        b.dat
+        c.dat
+        results/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git add a.dat
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git status --ignored
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   a.dat
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        b.dat
+        c.dat
+        results/
+
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git commit
+hint: Waiting for your editor to close the file...
+Aborting commit due to empty commit message.
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git pull origin master
+From https://github.com/Gauldblimey-Jet/climate-analysis
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 285 bytes | 285.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Gauldblimey-Jet/climate-analysis.git
+   1d6f67b..e57a251  master -> master
+
+Jethro@JethroGauld-PC MINGW64 ~/2019-03-13-southampton-swc/novice/git/code (mast
+er)
+$
